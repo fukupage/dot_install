@@ -1,0 +1,76 @@
+html {
+  font-size: 62.5%;
+}
+
+h2 {
+  font-size: 3.0rem;
+}
+
+.balloon {
+  width: 20rem;
+  background: #aaa;
+  font-size: 2.0rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 9rem 0;
+  position: relative;
+}
+
+.sample_1 {
+  border-style: solid;
+  border-width: 0;
+}
+
+.sample_1:after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  display: block;
+  border-style: solid;
+  border-width: 2.0rem;
+  border-color: #aaa transparent transparent transparent;
+  top: 20.8rem;
+  left: 1.0rem;
+}
+
+.sample_2:after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  display: block;
+  border-style: solid;
+  border-width: 2.0rem 0 0 2.0rem;
+  border-color: #aaa transparent transparent transparent;
+  top: 20.6rem;
+  left: 18.0rem;
+}
+
+.sample_3 {
+  border: 2px solid #aaa;
+  background: #fff;
+}
+
+.sample_3:before {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  display: block;
+  border-style: solid;
+  border-width: 2.0rem 0 0 2.0rem;
+  border-color: #aaa transparent transparent transparent;
+  bottom: -2.0rem;
+  right: 1.0rem;
+}
+
+.sample_3:after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  display: block;
+  border-style: solid;
+  border-width: 1.95rem 0 0 1.95rem;
+  border-color: #fff transparent transparent transparent;
+  bottom: -1.4rem;
+  right: 1.2rem;
+}
+/*# sourceMappingURL=style.css.map */

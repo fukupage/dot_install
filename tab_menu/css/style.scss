@@ -1,0 +1,57 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.container {
+  margin: 3.0rem auto;
+  line-height: 3.0rem;
+  width: 100.0rem;
+  position: relative;
+
+  .menu {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    li {
+      width: calc(100% / 5);
+
+      a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 1.0rem 0;
+        color: #333;
+        text-decoration: none;
+        border-radius: 0.5rem 0.5rem 0 0;
+      }
+      a:not(.active):hover {
+        opacity: 0.5;
+        transition: .4s;
+      }
+
+      a.active {
+        background: #333;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.content {
+  display: none;
+  padding: 1.5rem;
+  position: absolute;;
+}
+
+.content.active {
+  display: block;
+  background: #333;
+  color: #fff;
+}

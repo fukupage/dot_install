@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/earlyaccess/nicomoji.css");
+
+
+body{
+  font-family: "Nico Moji";
+  background-color: #efefef;
+  font-size: 14px;
+}
+#btn{
+  width:30rem;
+  height:30rem;
+  margin: 7rem auto;
+  border-radius: 50%;
+  background-color: #caa;
+  text-align: center;
+  line-height: 30rem;
+  font-weight: bold;
+  font-size: 7.5rem;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: ;
+  box-shadow: 0.3rem 0.3rem 0.5rem  #444;
+  text-shadow: 0.3rem 0.3rem 0.5rem  #444;
+  user-select: none;;
+}
+
+#btn:hover{
+  background-color: #dbb;
+}
+
+#btn:active{
+  margin-top: 7.1rem;
+  box-shadow: -0.2rem -0.2rem 0.2rem  #333;
+}

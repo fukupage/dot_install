@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  height: 300rem;
+}
+
+.box{
+  margin: 0;
+  padding: 0;
+  height: 340px;
+  /*
+  background-color: #000;
+  */
+}
+
+#bg1{
+  background: url("../img/img001.jpg") no-repeat;
+}
+
+#bg2{
+  background: url("../img/img002.jpg") no-repeat;
+}
+
+#bg3{
+  background: url("../img/img003.jpg") no-repeat;
+}
+
+#msg{
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: Verdana, Arial, sans-serif;
+  opacity: 0;
+  color: orange;
+  position: fixed;
+}

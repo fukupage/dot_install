@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+JP);
+body{
+  font-family: "Noto Sans JP";
+  background-color: #4d639f;
+}
+
+.container{
+  max-width: 40rem;
+}
+
+input[type=text],
+input[type=text]:focus{
+  color: #9abca4;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  max-width: 40rem;
+}
+
+/* 追加 */
+.list-group-item{
+  background-color: #2c4b79;
+}
+
+/* 追加 */
+.delete{
+  cursor: pointer;
+  color: orange;
+}
+
+/* 見かけ上削除。実際には消してない */
+.filtered{
+  display: none !important; 
+}
