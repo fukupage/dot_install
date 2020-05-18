@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="root"></div>
+  <!-- React本体 -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <!-- ReactをDOMに反映させる -->
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <!-- その他のライブラリ -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+    (() => {
+      const name = 'Rei Fukuda';
+      function showMessage(){
+        alert('hello');
+      }
+      ReactDOM.render(
+        <div className="box">
+          <span style={{width:200, height:200, background:'black',display:'block'}}
+          onClick={showMessage}></span>
+        <p>Hello! {name.toUpperCase()}</p>
+        <p>World!</p>
+        <hr />
+        </div>,
+        document.getElementById('root')
+      );
+    })();
+  </script>
+  <!-- script src="js/script.js" type="text/babel" ></script -->
+</body>
+
+</html>
