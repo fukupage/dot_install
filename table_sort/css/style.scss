@@ -1,0 +1,63 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css");
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.8rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table{
+  width: 60rem;
+  margin: 6rem auto;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+tbody tr:nth-child(odd){
+  background: #ddd;
+}
+
+th{
+  cursor: pointer;
+}
+
+th, td{
+  width: calc(100% / 3);
+  box-sizing: border-box;
+  border:1px solid #aaa;
+  padding: 0.8rem 2rem;
+
+}
+
+th:after {
+  content: '\f0dc';
+  font-family: FontAwesome;
+  font-size: 1.1rem;
+  color: #aaa;
+  float: right;
+  margin-top: 0.8rem;
+  font-weight: normal;
+}
+th.asc:after {
+  content: '\f0de';
+  font-family: FontAwesome;
+  font-size: 1.1rem;
+  color: #333;
+  float: right;
+  margin-top: 0.8rem;
+}
+th.desc:after {
+  content: '\f0dd';
+  font-family: FontAwesome;
+  font-size: 1.1rem;
+  color: #333;
+  float: right;
+  margin-top: 0.8rem;
+}
+
+.score{
+  text-align: right;
+}

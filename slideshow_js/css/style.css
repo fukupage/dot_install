@@ -1,0 +1,95 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+main {
+  width: 60rem;
+  margin: 5.0rem auto;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.0rem 0 3.0rem;
+}
+
+nav ul li {
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  user-select: none;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  background: #faa;
+  color: #966;
+  font-weight: bold;
+  transition: 0.5s;
+  box-shadow: -0.1rem -0.1rem 0.1rem rgba(66, 66, 66, 0.8);
+  border: none;
+}
+
+nav ul li:active {
+  color: #fff;
+  opacity: .3;
+}
+
+nav ul #play {
+  width: 30rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+nav ul #prev,
+nav ul #next {
+  width: 13rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+#main {
+  width: 60rem;
+  height: 40rem;
+}
+
+.thumbnails {
+  display: grid;
+  grid-template-columns: repeat(4, 23%);
+  gap: 2%;
+  list-style: none;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.thumbnails li {
+  border: none;
+  box-sizing: border-box;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.thumbnails li img {
+  width: 14.5rem;
+}
+
+.thumbnails li:hover {
+  opacity: 1;
+  transition: .5s;
+}
+
+.thumbnails li.current {
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */

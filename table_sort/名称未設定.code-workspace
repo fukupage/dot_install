@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../tab_menu"
+		},
+		{
+			"path": "../balloon_css"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}

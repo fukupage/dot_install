@@ -1,0 +1,21 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  padding: 4rem;
+}
+
+#target {
+  font-size: 8rem;
+  letter-spacing: 0.5rem;
+}
+
+.info {
+  color: #999;
+  font-size: 1.8rem;
+}
+/*# sourceMappingURL=style.css.map */
