@@ -18,18 +18,78 @@
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script type="text/babel">
     (() => {
-      const name = 'Rei Fukuda';
-      function showMessage(){
-        alert('hello');
+      function Counter(props){
+        return (
+          <li style={{ backgroundColor:props.counter.color }} onClick ={ ()=>
+          props.countUp(props.counter)} >
+            {props.counter.id}{props.counter.count}個
+          </li>
+        );
+      }
+
+      function CounterList(props){
+        const counters = props.counters.map( counter => {
+          return (
+          <Counter
+            counter = {counter}
+            key={counter.id}
+            countUp={props.countUp}
+          />
+          );
+        })
+        return (
+          <ul>
+            {counters}
+          </ul>
+
+        );
+
+      }
+
+      class App extends React.Component {
+        constructor() {
+          super();
+          this.state = {
+            counters: [
+              { id: 'A', count: 0, color: 'tomato' },
+              { id: 'B', count: 0, color: 'skyblue' },
+              { id: 'C', count: 0, color: 'limegreen' },
+              { id: 'D', count: 0, color: 'red' },
+              { id: 'E', count: 0, color: 'orange' }
+            ],
+            total: 0
+          };
+          this.countUp = this.countUp.bind(this);
+        }
+        countUp(counter){
+          this.setState(prevState => {
+            const counters = prevState.counters.map(counter => {
+              return {id: counter.id, count: counter.count, color: counter.color};
+            });
+            const pos = counters.map(counter => {
+              return counter.id;
+            }).indexOf(counter.id);
+            counters[pos].count++;
+            return{
+              counters: counters,
+              total : prevState.total + 1
+            };
+          });
+        }
+        render() {
+          return (
+            <div className="container">
+              <CounterList
+                counters={this.state.counters}
+                countUp={this.countUp}
+              />
+              <div>Total Inventory: {this.state.total}</div>
+            </div>
+          );
+        }
       }
       ReactDOM.render(
-        <div className="box">
-          <span style={{width:200, height:200, background:'black',display:'block'}}
-          onClick={showMessage}></span>
-        <p>Hello! {name.toUpperCase()}</p>
-        <p>World!</p>
-        <hr />
-        </div>,
+        <App/>,
         document.getElementById('root')
       );
     })();
