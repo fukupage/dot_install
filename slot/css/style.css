@@ -1,0 +1,83 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #cee;
+  font-weight: bold;
+  font-size: 2.0rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body main {
+  width: 40rem;
+  background-color: #9bb;
+  padding: 2.0rem;
+  border: 4px solid #fff;
+  border-radius: 1.0rem;
+  margin: 2.0rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+}
+
+body main .panel img {
+  width: 9.0rem;
+  height: 11rem;
+  margin-bottom: 2.0rem;
+  border-radius: 1.0rem;
+  -webkit-box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+}
+
+body main .panel img.unmatch {
+  opacity: 0.5;
+}
+
+body main .panel .stop {
+  cursor: pointer;
+  width: 9.0rem;
+  height: 3.0rem;
+  text-align: center;
+  background-color: #c33;
+  color: #fff;
+  -webkit-box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+  border-radius: 1.0rem;
+  line-height: 3.0rem;
+  font-size: 1.4rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body main .panel .stop.inactive {
+  opacity: 0.5;
+}
+
+body #spin {
+  background-color: #66f;
+  color: #fff;
+  width: 30rem;
+  margin: 2.0rem auto 0;
+  text-align: center;
+  padding: 1.0rem 0;
+  border-radius: 0.5rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+body #spin.inactive {
+  opacity: 0.5;
+}
+/*# sourceMappingURL=style.css.map */

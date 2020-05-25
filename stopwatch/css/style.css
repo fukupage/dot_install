@@ -1,0 +1,64 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2.0rem;
+  background-color: #acc;
+}
+
+main {
+  width: 60rem;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  background-color: #cff;
+  padding: 2.0rem;
+  border-radius: 2.0rem;
+  -webkit-box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.5);
+}
+
+main #timer {
+  background: #fff;
+  font-size: 9.0rem;
+  margin-bottom: 2.0rem;
+  height: 12.0rem;
+  line-height: 12.0rem;
+  border-radius: 2.0rem;
+  -webkit-box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.5);
+}
+
+main nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main nav .btn {
+  width: 18rem;
+  height: 5rem;
+  line-height: 5rem;
+  background-color: #ddd;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.5);
+  border-radius: 2.0rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+main nav .btn.inactive {
+  opacity: 0.5;
+}
+/*# sourceMappingURL=style.css.map */
